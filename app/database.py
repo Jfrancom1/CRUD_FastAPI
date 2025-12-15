@@ -2,6 +2,7 @@ from sqlalchemy import create_engine
 from sqlalchemy.orm import sessionmaker, DeclarativeBase
 from .config import DATABASE_URL, IS_SQLITE
 
+DATABASE_URL = "mysql+pymysql://root:1234@localhost/lab1"
 
 class Base(DeclarativeBase):
     """Base class for SQLAlchemy models."""
